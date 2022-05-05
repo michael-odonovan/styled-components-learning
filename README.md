@@ -1,1 +1,1 @@
-## Compiling Styled Components Docs into a working repo
+## Collating Styled Components Docs into a working repo
