@@ -38,6 +38,15 @@ const StyledImportedComponent = styled(ImportedComponent)`
   color: red;
 `
 
+const Input = styled.input`
+  padding: 0.5em;
+  margin: 0.5em;
+  color: ${props => props.inputColor || "palevioletred"};
+  background: papayawhip;
+  border: none;
+  border-radius: 3px;
+`
+
 function App() {
   return (
     <Wrapper>
@@ -66,6 +75,10 @@ function App() {
 
       <h3>Styling an imported component with className prop</h3>
       <StyledImportedComponent>Styled Imported Component</StyledImportedComponent>
+
+      <h3>You can pass props to a Styled Component and to the DOM:</h3>
+      <Input defaultValue="hello" types="text"/>
+      <Input defaultValue="welcome" type="text" inputColor="rebeccapurple"/>
 
     </Wrapper>
   );
