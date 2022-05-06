@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import ImportedComponent from './ImportedComponent'
+import { ChevronLeft } from '@styled-icons/entypo'
 
 const Wrapper = styled.section`
   padding: 4rem;
@@ -113,6 +114,13 @@ function App() {
       <div className="something-else">
         <Thing>Splendid.</Thing>
       </div>
+
+      <h1>Up to <a href="https://styled-components.com/docs/basics#pseudoelements-pseudoselectors-and-nesting">here</a></h1> 
+
+
+      <h1>Other Knowledge =============</h1>
+      <h3>Using with Styled Icons package:</h3>
+      <ChevronLeft size="30" />
 
     </Wrapper>
   );
